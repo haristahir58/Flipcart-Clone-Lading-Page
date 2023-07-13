@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    background-color: #172337;
+    align-items: center;
+    margin-right: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 3vw;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer ul li p {
+    color: white;
+    list-style: none;
+}
+
+header {
+    height: 10vh;
+    background-color: gray;
+}
+
+.navbar {
+    display: flex;
+    height: 10vh;
+    background-color: #2874f0;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding-right: 53px;
+    font-weight: 700;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .textbar {
+    width: 26vw;
+    height: 5vh;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.btn {
+    position: relative;
+    right: 87px;
+    height: 5vh;
+    width: 6vw;
+    border-radius: 1px;
+    background-color: white;
+    border: 2px solid #2874f0;
+    color: #2874f0;
+    font-family: ariel;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navbar img {
+    margin-left: 183px;
+}
+
+.explore {
+    position: absolute;
+    left: 17vw;
+    top: 6vh;
+    color: whitesmoke;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.plus {
+    position: absolute;
+    left: 20vw;
+    top: 6vh;
+    font-size: 12px;
+    font-style: italic;
+    color: yellow;
+
+}
+span:hover{
+    text-decoration: underline;
+}
+
+main{
+    min-height: calc(120vh - 10vh - 12vh);
+}
+.categories{
+    height: 15vh;
+    width: 100%;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.categories img{
+    height: 55%;
+}
+.categories a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align:end;
+}
+.categories span{
+    display: block;
+    text-decoration: none;
+}
+.categories a:hover{
+    color: #2874f0;
+}
+
+.slider{
+    margin-top: 0.75vh;
+    height: 60vh;
+    width: 100%;
+    border: 1px solid gray;
+    overflow: hidden;
+    background-image: url("https://source.unsplash.com/1600x500/? shopping, ecommerce");
+    animation: slide 10s ease-in 3s infinite;
+   
+    
+}
+@keyframes slide {
+    0%{
+        background-image: url("https://source.unsplash.com/1600x500/? shopping, ecommerce");
+    }
+    50%{
+        background-image: url("https://source.unsplash.com/1605x500/? Smartphones, ecommerce");
+    }
+    100%{
+        background-image: url("https://source.unsplash.com/1608x500/? Perfumes, ecommerce");
+    }
+}
+
+.watches{
+    height: 50vh;
+    margin: 4px;
+    border: 2px solid rgb(179, 179, 179);
+    
+}
+.deals{
+    height: 10vh;
+    border: 1px solid rgb(179, 179, 179);
+    display: flex;
+    align-items: center;
+    
+}
+.deals li{
+    display: inline-block;
+    margin-right: 64px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.deals p{
+    color:rgb(155, 10, 10);
+}
+
+.item-1{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 23px;
+    height: 43vh;
+  }
+
+.item-1 img{
+    height: 65%;
+
+}
+.item-1 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align:end;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.item-1 span{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+.item-1 img:hover{
+    height: 16vh;
+}
+.item-1 p{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+@media screen and (max-width:1000px) {
+    body{
+        background-color: red;
+    }
+    .slider{
+        background-size: 45vh;
+        background-repeat: no-repeat;
+        }
+    }
+    
